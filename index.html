@@ -1,8 +1,89 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"
-<title>Segurança Digital para Idosos</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Página explicativa sobre UX e acessibilidade, com foco no desenvolvimento de interfaces inclusivas."
+    >
+    <title>UX e acessibilidade: desenvolvendo interfaces inclusivas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Design inclusivo</p>
+        <h1>UX e acessibilidade: desenvolvendo interfaces inclusivas</h1>
+        <p>
+          Quando a experiência do usuário é pensada para todas as pessoas,
+          a interface fica mais clara, útil e acolhedora.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#praticas">Ver boas práticas</a>
+          <button class="button button--secondary" id="theme-toggle" type="button" aria-pressed="false">
+            Ativar tema escuro
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#princípios">Princípios</a>
+      <a href="#praticas">Práticas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <main id="conteudo">
+      <section class="card" id="sobre">
+        <h2>Por que isso importa?</h2>
+        <p>
+          Boa experiência de uso não é só estética. Ela envolve clareza de
+          conteúdo, navegação intuitiva e adaptação para diferentes
+          necessidades, como baixa visão, mobilidade reduzida, dificuldade de
+          compreensão e uso de tecnologias assistivas.
+        </p>
+      </section>
+
+      <section class="grid" id="princípios" aria-label="Princípios de UX e acessibilidade">
+        <article class="card">
+          <h3>Perceptível</h3>
+          <p>Informações e componentes devem ser apresentados de forma que todos consigam perceber e entender.</p>
+        </article>
+        <article class="card">
+          <h3>Operável</h3>
+          <p>Interface e navegação precisam funcionar com teclado, toque e outras formas de interação.</p>
+        </article>
+        <article class="card">
+          <h3>Compreensível</h3>
+          <p>As mensagens, os fluxos e as instruções devem ser simples, claros e previsíveis.</p>
+        </article>
+      </section>
+
+      <section class="card" id="praticas">
+        <h2>Práticas recomendadas</h2>
+        <ul class="checklist">
+          <li>Use contraste adequado entre texto e fundo.</li>
+          <li>Organize o layout de forma consistente e hierárquica.</li>
+          <li>Adicione textos alternativos para imagens e ícones.</li>
+          <li>Garanta foco visível em elementos interativos.</li>
+          <li>Teste a interface com teclado e leitores de tela.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="contato">
+        <h2>Vamos construir juntos</h2>
+        <p>
+          Pequenas escolhas de design podem impactar milhões de pessoas. Criar
+          com acessibilidade é criar com responsabilidade e cuidado.
+        </p>
+        <a class="button button--primary" href="mailto:contato@exemplo.com">Fale conosco</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
